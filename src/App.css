@@ -47,6 +47,15 @@
 .colChangePage3{
   animation: colChange3 10s linear infinite;
 }
+.colChangePage4{
+  animation: colChange4 10s linear infinite;
+}
+.colChangePage5{
+  animation: colChange5 10s linear infinite;
+}
+.colChangePage6{
+  animation: colChange6 10s linear infinite;
+}
 
 @keyframes colChange1 {
   0%{background-color:#FF3939;}
@@ -63,6 +72,22 @@
   50%{background-color:#850000;}
   100%{background-color:#FF3939;}
 }
+@keyframes colChange4 {
+  0%{background-color:#FF3939;}
+  50%{background-color:#d92241;}
+  100%{background-color:#FF3939;}
+}
+@keyframes colChange5 {
+  0%{background-color:#FF3939;}
+  50%{background-color:#472D2D;}
+  100%{background-color:#FF3939;}
+}
+@keyframes colChange6 {
+  0%{background-color:#FF3939;}
+  50%{background-color:#750550;}
+  100%{background-color:#FF3939;}
+}
+
 .pageShown{
   animation: pageShownAnim 1s ease-in;
 }
