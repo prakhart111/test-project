@@ -90,6 +90,7 @@
 
 .pageShown{
   animation: pageShownAnim 1s ease-in;
+  animation-iteration-count: 1 !important;
 }
 .pageChanged{
   animation: pageGoneAnim 1s ease-out;
