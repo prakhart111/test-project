@@ -11,10 +11,10 @@ function App() {
   console.log(check)
   return (
     <div className="App flex flex-col items-center align-center justify-center" style={{height:check?window.innerHeight:"100vh"}}>
-      {showDesign && <><RotatingDesign type={1}/>
-      <RotatingDesign type={2}/>
-      <RotatingDesign type={3}/>
-      <RotatingDesign type={4}/></>}
+      {showDesign && <><RotatingDesign type={1} isMobile={check}/>
+      <RotatingDesign type={2} isMobile={check}/>
+      <RotatingDesign type={3} isMobile={check}/>
+      <RotatingDesign type={4} isMobile={check}/></>}
       <Content setShowDesign={setShowDesign}/>
     </div>
   )
