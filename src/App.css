@@ -6,6 +6,9 @@
   font-family: 'Inter', sans-serif;
   touch-action: none !important;
 }
+body{
+  background-color: #FF3939;
+}
 .App{
   background-color: #FF3939;
   margin:0;
