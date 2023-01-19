@@ -28,7 +28,7 @@ const RotatingDesign = ({type}) => {
         padding:0,
         ...selectedType
     }}>
-        <img src={design} className={`scale-[0.7] sm:scale-[0.95] ${type==1 || type==4 ? 'rotate-img' : 'rotate-img2'}`} width="70%" style={{padding:0,margin:0}} />
+        <img src={design} className={`scale-[0.7] sm:scale-[0.95] ${type==1 || type==4 ? 'rotate-img' : 'rotate-img2'}`} width="65%" style={{padding:0,margin:0}} />
     </div>
   )
 }
