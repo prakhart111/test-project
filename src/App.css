@@ -22,6 +22,7 @@ body{
 }
 .rotate-img{
   animation: spin 5s linear infinite;
+  -webkit-animation: spin 5s linear infinite;
 }
 @keyframes spin {
   from{rotate:0deg;}
@@ -29,8 +30,21 @@ body{
 }
 .rotate-img2{
   animation: spin2 5s linear infinite;
+  -webkit-animation: spin2 5s linear infinite;
+}
+@-webkit-keyframes spin {
+  from{rotate:0deg;}
+  to{rotate:360deg;}
+}
+.rotate-img2{
+  animation: spin2 5s linear infinite;
+  -webkit-animation: spin2 5s linear infinite;
 }
 @keyframes spin2 {
+  from{rotate:360deg;}
+  to{rotate:0deg;}
+}
+@-webkit-keyframes spin2 {
   from{rotate:360deg;}
   to{rotate:0deg;}
 }
@@ -43,23 +57,28 @@ body{
 
 .colChangePage1{
   animation: colChange1 10s linear infinite;
+  -webkit-animation: colChange1 10s linear infinite;
 }
 .colChangePage2{
   animation: colChange2 10s linear infinite;
+  -webkit-animation: colChange2 10s linear infinite;
 }
 .colChangePage3{
   animation: colChange3 10s linear infinite;
+  -webkit-animation: colChange3 10s linear infinite;
 }
 .colChangePage4{
   animation: colChange4 10s linear infinite;
+  -webkit-animation: colChange4 10s linear infinite;
 }
 .colChangePage5{
   animation: colChange5 10s linear infinite;
+  -webkit-animation: colChange5 10s linear infinite;
 }
 .colChangePage6{
   animation: colChange6 10s linear infinite;
+  -webkit-animation: colChange6 10s linear infinite;
 }
-
 @keyframes colChange1 {
   0%{background-color:#FF3939;}
   50%{background-color:#EBAB07;}
@@ -90,20 +109,62 @@ body{
   50%{background-color:#750550;}
   100%{background-color:#FF3939;}
 }
+@-webkit-keyframes colChange1 {
+  0%{background-color:#FF3939;}
+  50%{background-color:#EBAB07;}
+  100%{background-color:#FF3939;}
+}
+@-webkit-keyframes colChange2 {
+  0%{background-color:#FF3939;}
+  50%{background-color:#6D67E4;}
+  100%{background-color:#FF3939;}
+}
+@-webkit-keyframes colChange3 {
+  0%{background-color:#FF3939;}
+  50%{background-color:#850000;}
+  100%{background-color:#FF3939;}
+}
+@-webkit-keyframes colChange4 {
+  0%{background-color:#FF3939;}
+  50%{background-color:#d92241;}
+  100%{background-color:#FF3939;}
+}
+@-webkit-keyframes colChange5 {
+  0%{background-color:#FF3939;}
+  50%{background-color:#472D2D;}
+  100%{background-color:#FF3939;}
+}
+@-webkit-keyframes colChange6 {
+  0%{background-color:#FF3939;}
+  50%{background-color:#750550;}
+  100%{background-color:#FF3939;}
+}
 
 .pageShown{
   animation: pageShownAnim 1s ease-in;
+  -webkit-animation: pageShownAnim 1s ease-in;
   animation-iteration-count: 1 !important;
+  -webkit-animation-iteration-count: 1 !important;
 }
 .pageChanged{
   animation: pageGoneAnim 1s ease-out;
+  -moz-animation: pageGoneAnim 1s ease-out;
+  -webkit-animation: pageGoneAnim 1s ease-out;
 }
-
 @keyframes pageShownAnim {
   from{opacity: 0;}
   to{opacity: 1;}
 }
 @keyframes pageChanged {
+  0%{opacity: 1;}
+  50%{opacity: 0;}
+  100%{opacity:1;}
+}
+@-webkit-keyframes pageShownAnim {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+@-webkit-keyframes pageChanged {
   0%{opacity: 1;}
   50%{opacity: 0;}
   100%{opacity:1;}

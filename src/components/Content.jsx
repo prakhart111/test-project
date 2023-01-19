@@ -24,7 +24,7 @@ const Content = ({setShowDesign}) => {
       }},5000);
   
       return ()=>clearInterval(newIntID)
-    },[pause])
+    },[pause,pageNumber])
 
 
   return (
