@@ -1,9 +1,14 @@
 import React from 'react'
+import CarouselComponent from '../CarouselComponent'
+
 
 const Page6 = ({showTimeClass}) => {
   return (
-    <div className='w-screen h-screen flex flex-col items-center justify-center colChangePage6 transition'>
-        <h1 className={`text-white absolute top-4 left-4 font-black text-8xl md:text-9xl ${showTimeClass}`}>2022</h1>
+    <div className={`${showTimeClass} colChangePage6`}>
+        <p className={` absolute top-28 text-white sm:p-4 px-4 sm:w-[35%] font-bold text-2xl md:text-3xl ${showTimeClass}`}>
+          few memorable ones
+        </p>
+      <CarouselComponent />
     </div>
   )
 }

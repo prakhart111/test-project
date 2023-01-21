@@ -7,6 +7,7 @@ import Page2 from './Pages/Page2'
 import Page3 from './Pages/Page3'
 import Page4 from './Pages/Page4'
 import Page5 from './Pages/Page5'
+import Page5a from './Pages/Page5a'
 import Page6 from './Pages/Page6'
 
 const Content = ({setShowDesign}) => {
@@ -17,7 +18,7 @@ const Content = ({setShowDesign}) => {
     React.useEffect(()=>{
       const newIntID = setInterval(()=>{
         if(!pause){
-          if(pageNumber<7)setPageNumber(pageNumber+1)
+          if(pageNumber<8)setPageNumber(pageNumber+1)
           if(pageNumber>=3){
             setShowDesign(false);
         }
@@ -34,7 +35,8 @@ const Content = ({setShowDesign}) => {
         pageNumber==3?<Page3 showTimeClass="pageShown"/>:
         pageNumber==4?<Page4 showTimeClass="pageShown"/>:
         pageNumber==5?<Page5 showTimeClass="pageShown"/>:
-        pageNumber==6?<Page6 showTimeClass="pageShown"/> :"Under Progress"}
+        pageNumber==6?<Page5a showTimeClass="pageShown"/>:
+        pageNumber==7?<Page6 showTimeClass="pageShown"/> :"Thank You."}
         <div className="absolute flex w-fit top-4 sm:right-0 sm:left-0 sm:m-auto -right-2">
         <h1 className='z-10 flex items-center align-center transition-all ease-in duration-500 text-white font-bold text-2xl cursor-pointer' onClick={()=>setPause(!pause)}>
           {/* {pause?"Play":"Pause"} */}
@@ -58,7 +60,7 @@ const Content = ({setShowDesign}) => {
             src={downIcon} />  
       <img className='p-4 pb-12 h-28' 
             onClick={()=>{
-                if(pageNumber<7)setPageNumber(pageNumber+1)
+                if(pageNumber<8)setPageNumber(pageNumber+1)
                 else alert("Further Pages are under progress")
                 if(pageNumber>=3){
                     setShowDesign(false);
