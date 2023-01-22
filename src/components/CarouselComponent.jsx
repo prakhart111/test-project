@@ -24,115 +24,115 @@ import "./CarouselComponentCSS.css"
 
 const CarouselComponent = () => {
   return (
-    <Carousel keyboard={true} interval={2000} pause={false}>
+    <Carousel keyboard={true} interval={2000}>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img1}
           alt="First slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img2}
           alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img3}
           alt="Third slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img4}
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img5}
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block object-fill"
           src={img6}
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img7}
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img8}
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img9}
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img10}
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img11}
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img12}
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img13}
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img14}
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-[85%] object-contain"
           src={img15}
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img16}
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img17}
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block  "
           src={img18}
         />
       </Carousel.Item>

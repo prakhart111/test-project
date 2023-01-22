@@ -49,19 +49,18 @@ const Content = ({setShowDesign}) => {
         </h1>
       </div>
       <div className="absolute flex w-fit bottom-4 right-0 left-0 m-auto">
-      <img className='up-icon rotate-180 p-4 pt-12 h-28' 
+      <img className='up-icon rotate-180 p-4 pt-12 h-20 sm:h-24' 
             onClick={()=>{
                 if(pageNumber>=1)setPageNumber(pageNumber-1)
                 else alert("Further Pages are under progress")
                 if(pageNumber<=4){
                     setShowDesign(true);
                 }
-            }}
+            }} 
             src={downIcon} />  
-      <img className='p-4 pb-12 h-28' 
+      <img className='p-4 pb-12 h-20 sm:h-24' 
             onClick={()=>{
                 if(pageNumber<8)setPageNumber(pageNumber+1)
-                else alert("Further Pages are under progress")
                 if(pageNumber>=3){
                     setShowDesign(false);
                 }
