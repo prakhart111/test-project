@@ -53,7 +53,6 @@ const Content = ({setShowDesign}) => {
       <img className='up-icon rotate-180 p-4 pt-12 h-20 sm:h-24' 
             onClick={()=>{
                 if(pageNumber>=1)setPageNumber(pageNumber-1)
-                else alert("Further Pages are under progress")
                 if(pageNumber<=4){
                     setShowDesign(true);
                 }

@@ -6,11 +6,11 @@ const Page5 = ({showTimeClass}) => {
     <div className='w-screen h-screen flex flex-col-reverse sm:flex-row sm:gap-4 items-center justify-center colChangePage4 transition'>
         <p className={`text-white sm:p-4 px-4 sm:w-[35%] font-bold text-lg md:text-3xl ${showTimeClass}`}>
         <span className='font-black text-xl md:text-4xl'>PERFECT.</span>
-<br/><br/>
+<br/><div className="p-2"></div>
 that’s the single word defining you two.<br/>
 and together<br/>
 you are<br/>
-<br/>
+<div className="p-2"></div>
 <span className='font-black text-xl md:text-4xl text-yellow-300'>spec</span>
 <span className='font-black text-xl md:text-4xl'>tacular.</span>
         </p>
