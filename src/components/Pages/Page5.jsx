@@ -14,7 +14,7 @@ you are<br/>
 <span className='font-black text-xl md:text-4xl text-yellow-300'>spec</span>
 <span className='font-black text-xl md:text-4xl'>tacular.</span>
         </p>
-        <img src={img8} className={`object-cover sm:w-[30%] w-[95%] h-[50%] sm:h-[75%] p-4 -mt-16 sm:mt-0 ${showTimeClass}`} />
+        <img src={img8} className={`object-cover sm:w-[30%] w-[95%] h-[50%] sm:h-[75%] p-4 -mt-28 sm:mt-0 ${showTimeClass}`} />
     </div>
   )
 }

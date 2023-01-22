@@ -12,7 +12,7 @@ You guys were always there for each other, despite of several hardships.
 <br/><br />
 Wishing you happiness for the days ahead too!
         </p>
-        <img src={img15} className={`sm:w-[35%] p-4 -mt-16 sm:mt-0 ${showTimeClass}`} />
+        <img src={img15} className={`sm:w-[35%] p-4 -mt-28 sm:mt-0 ${showTimeClass}`} />
     </div>
   )
 }

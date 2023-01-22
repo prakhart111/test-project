@@ -15,14 +15,15 @@ const Content = ({setShowDesign}) => {
     const [pause,setPause] = React.useState(false);
     // const [id,setId] = React.useState(0);
 
+    let timeTransition = 7000;
     React.useEffect(()=>{
       const newIntID = setInterval(()=>{
         if(!pause){
-          if(pageNumber<8)setPageNumber(pageNumber+1)
+          if(pageNumber<7)setPageNumber(pageNumber+1)
           if(pageNumber>=3){
             setShowDesign(false);
         }
-      }},5000);
+      }},timeTransition);
   
       return ()=>clearInterval(newIntID)
     },[pause,pageNumber])
